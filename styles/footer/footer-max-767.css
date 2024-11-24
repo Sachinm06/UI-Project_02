@@ -1,0 +1,17 @@
+
+
+.footer-columns {
+    flex-direction: column-reverse;
+    gap: 2em;
+}
+
+.site-footer {
+    height: auto !important;
+
+}
+
+.footer-menu {
+    font-size: 12px;
+    gap: 15px !important;
+    flex-direction: column;
+}

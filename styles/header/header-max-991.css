@@ -1,0 +1,12 @@
+.hamburger {
+    display: block;
+}
+
+.nav-menu {
+    display: none;
+}
+
+.navbar.active .nav-menu {
+    display: flex;
+    flex-direction: column;
+}

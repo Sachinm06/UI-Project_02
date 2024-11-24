@@ -1,0 +1,85 @@
+.site-header {
+    padding: 25px 0 20px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: transparent;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+.site-header.scrolled {
+    background: var(--primary-color);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 2.625em;
+    margin-right: 70px;
+}
+
+.nav-menu li a {
+    color: var(--primary-color);
+    transition: color 0.3s;
+    text-transform: uppercase;
+    font-family: var(--primary-font);
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.site-header.scrolled .nav-menu li a {
+    color: var(--black);
+}
+
+.nav-menu li a:hover {
+    color: var(--secondary-hover);
+}
+.site-header.scrolled .nav-menu li a:hover {
+    color: var(--secondary-color);
+}
+
+.search-box {
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    padding: 10px 42px;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.site-header.scrolled .search-box {
+    color: var(--black);
+    border: 1px solid var(--black);
+}
+
+.search-box:hover {
+    color: var(--black);
+    background: var(--primary-color);
+}
+
+.site-header.scrolled .search-box:hover {
+    color: var(--primary-color);
+    background: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+}
+
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    flex-direction: column;
+    gap: 0.3em;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+}
